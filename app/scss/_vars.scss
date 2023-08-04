@@ -1,0 +1,23 @@
+$dark-blue: #4F5665;
+$pink: #f53855;
+$white: #fff;
+$dark: #0b132a;
+
+%rubik-400 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+%rubik-700 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+%transition {
+  transition: text-decoration 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, fill 0.3s ease-in-out, border 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, translate 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
