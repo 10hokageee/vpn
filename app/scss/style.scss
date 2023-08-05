@@ -92,7 +92,7 @@
   }
 
   &__btn {
-    background-color: $pink;
+    background-color: $dark-pink;
     border-radius: 10px;
     color: $white;
     @extend %rubik-700;
@@ -102,9 +102,9 @@
     @extend %transition;
 
     &:hover {
-      color: $pink;
+      color: $dark-pink;
       background-color: #fff;
-      border: 1px solid $pink;
+      border: 1px solid $dark-pink;
     }
   }
 }
@@ -292,14 +292,14 @@
   &__list-btn {
     padding: 13px 63px;
     border-radius: 50px;
-    border: 2px solid $pink;
-    color: $pink;
+    border: 2px solid $dark-pink;
+    color: $dark-pink;
     font-size: 16px;
     @extend %rubik-700;
     @extend %transition;
 
     &:hover {
-      background-color: $pink;
+      background-color: $dark-pink;
       color: $white;
     }
   }
@@ -331,6 +331,7 @@
 }
 
 .reviews {
+  padding-bottom: 60px;
 
   &__content {
     display: flex;
@@ -351,21 +352,21 @@
   &__list-items {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
     justify-content: space-between;
     position: relative;
+    padding-bottom: 120px;
   }
 
   &__list-item {
     border-radius: 10px;
     border: 2px solid #ddd;
-    padding: 30px;
+    padding: 15px;
     @extend %transition;
+    min-height: 230px;
 
     &:hover {
       border: 2px solid $pink;
     }
-
   }
 
   &__list-name {
@@ -384,7 +385,7 @@
     & span {
       display: block;
       @extend %rubik-400;
-      color: $dark-blue;     
+      color: $dark-blue;
       font-size: 14px;
     }
   }
@@ -392,9 +393,9 @@
   &__list-rating {
     padding-right: 26px;
     position: relative;
-    
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       top: 50%;
@@ -407,9 +408,10 @@
 
   &__list-img {
     margin-right: 20px;
+    border-radius: 50%;
   }
 
-  &__list-text { 
+  &__list-text {
     max-width: 340px;
     color: $dark;
   }
@@ -418,9 +420,199 @@
   .slick-prev {
     position: absolute;
     bottom: 0;
+    height: 60px;
+    width: 60px;
+    border: 2px solid $dark-pink;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    right: 0;
+    @extend %transition;
+
+    & svg {
+      width: 20px;
+      height: 17.502px;
+      fill: $dark-pink;
+      @extend %transition;
+    }
+
+    &:focus {
+      background-color: $dark-pink;
+
+      & svg {
+        fill: $white;
+      }
+    }
+  }
+
+  .slick-prev {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+
+  .slick-next {
+    right: 80px;
   }
 
   .slick-slide {
-    margin-right: 50px;
+    margin-right: 40px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    & li {
+      line-height: 0;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      & button {
+        padding: 0;
+        font-size: 0;
+        background-color: #dde0e4;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: $dark-pink;
+        width: 45px;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+.subscribe {
+  padding: 60px 0 123px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 70px;
+  }
+
+  &__contnet {
+    max-width: 410px;
+  }
+
+  &__title {
+    max-width: 371px;
+  }
+
+  &__btn {
+    padding: 18px 75px;
+    background-color: $dark-pink;
+    color: $white;
+    line-height: 25px;
+    @extend %rubik-700;
+    border-radius: 10px;
+    @extend %transition;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $white;
+      color: $dark-pink;
+      border: 1px solid $dark-pink;
+    }
+  }
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding-bottom: 100px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 340px 575px;
+    gap: 230px;
+  }
+
+  &__logo {
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    & span {
+      color: $dark-blue;
+      @extend %rubik-500;
+    }
+  }
+
+  &__socials-list {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__socials-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__social-link {
+    background-color: $white;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    @extend %transition;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    svg {
+      height: 20px;
+      fill: $dark-pink;
+      @extend %transition;
+    }
+
+    &:hover {
+      background-color: $dark-pink; 
+
+      svg {
+      fill: $white;
+      }
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: 74px 124px 122px;
+    gap: 126px;
+  }
+
+  &__nav-title {
+    color: $dark;
+    font-size: 18px;
+    @extend %rubik-500;
+    margin-bottom: 20px;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__nav-link {
+    @extend %transition;
+    
+    &:hover {
+      color: $dark-pink;
+    }
   }
 }
