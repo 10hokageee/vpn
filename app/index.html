@@ -7,12 +7,12 @@
     <title>Vpn</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
+  <body id="home">
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
+      <div class="header__inner">
+        <div class="container">
           <nav class="header__menu">
-            <a class="logo" href="#">
+            <a class="logo" href="#home">
               <img
                 class="logo__img"
                 src="images/icons/logo.svg"
@@ -22,25 +22,28 @@
 
             <ul class="header__menu-list">
               <li class="header__menu-list-item">
-                <a class="header__menu-list-link" href="#">About</a>
+                <a class="header__menu-list-link" href="#info">About</a>
               </li>
               <li class="header__menu-list-item">
-                <a class="header__menu-list-link" href="#">Features</a>
+                <a class="header__menu-list-link" href="#features">Features</a>
               </li>
               <li class="header__menu-list-item">
-                <a class="header__menu-list-link" href="#">Pricing</a>
+                <a class="header__menu-list-link" href="#services">Pricing</a>
               </li>
               <li class="header__menu-list-item">
-                <a class="header__menu-list-link" href="#">Testimonials</a>
+                <a class="header__menu-list-link" href="#reviews">Testimonials</a>
               </li>
               <li class="header__menu-list-item">
-                <a class="header__menu-list-link" href="#">Help</a>
+                <a class="header__menu-list-link" href="#footer">Help</a>
               </li>
             </ul>
 
             <div class="header__user-nav">
-              <button class="header__user-btn">Sign In</button>
-              <button class="header__user-btn header__user-btn--active">
+              <button type="button" class="header__user-btn">Sign In</button>
+              <button
+                type="button"
+                class="header__user-btn header__user-btn--active"
+              >
                 Sign Up
               </button>
             </div>
@@ -50,7 +53,7 @@
     </header>
 
     <main class="main">
-      <section class="preview">
+      <section class="preview" id="info">
         <div class="container">
           <div
             class="preview__inner"
@@ -64,7 +67,7 @@
                 Provide a network for all your needs with ease and fun using
                 <span>LaslesVPN</span> discover interesting features from us.
               </p>
-              <button class="preview__btn">Get Started</button>
+              <button type="button" class="preview__btn">Get Started</button>
             </div>
           </div>
         </div>
@@ -95,7 +98,7 @@
         </div>
       </div>
 
-      <section class="features">
+      <section class="features" id="features">
         <div class="container">
           <div
             class="features__inner"
@@ -124,7 +127,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="title">Choose Your Plan</h2>
           <p class="services__text">
@@ -150,7 +153,7 @@
 
               <div class="services__list-price">
                 <p class="services__list-cost">Free</p>
-                <button class="services__list-btn">Select</button>
+                <button type="button" class="services__list-btn">Select</button>
               </div>
             </li>
 
@@ -172,7 +175,7 @@
 
               <div class="services__list-price">
                 <p class="services__list-cost">$9 <span>/ mo</span></p>
-                <button class="services__list-btn">Select</button>
+                <button type="button" class="services__list-btn">Select</button>
               </div>
             </li>
 
@@ -195,9 +198,8 @@
 
               <div class="services__list-price">
                 <p class="services__list-cost">$12 <span>/ mo</span></p>
-                <button class="services__list-btn">Select</button>
+                <button type="button" class="services__list-btn">Select</button>
               </div>
-              
             </li>
           </ul>
         </div>
@@ -222,7 +224,7 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <div class="reviews__content">
             <h2 class="reviews__title title">
@@ -240,7 +242,7 @@
                 <img
                   class="reviews__list-img"
                   src="images/sponsors/user-1.jpg"
-                  alt=""
+                  alt="User image"
                 />
                 <p class="reviews__list-user">
                   Viezh Robert
@@ -261,7 +263,7 @@
                 <img
                   class="reviews__list-img"
                   src="images/sponsors/user-2.jpg"
-                  alt=""
+                  alt="User image"
                 />
                 <p class="reviews__list-user">
                   Yessica Christy
@@ -281,7 +283,7 @@
                 <img
                   class="reviews__list-img"
                   src="images/sponsors/user-3.jpg"
-                  alt=""
+                  alt="User image"
                 />
                 <p class="reviews__list-user">
                   Kim Young Jou
@@ -300,7 +302,7 @@
                 <img
                   class="reviews__list-img"
                   src="images/sponsors/user-1.jpg"
-                  alt=""
+                  alt="User image"
                 />
                 <p class="reviews__list-user">
                   Viezh Robert
@@ -321,7 +323,7 @@
                 <img
                   class="reviews__list-img"
                   src="images/sponsors/user-2.jpg"
-                  alt=""
+                  alt="User image"
                 />
                 <p class="reviews__list-user">
                   Yessica Christy
@@ -341,7 +343,7 @@
                 <img
                   class="reviews__list-img"
                   src="images/sponsors/user-3.jpg"
-                  alt=""
+                  alt="User image"
                 />
                 <p class="reviews__list-user">
                   Kim Young Jou
@@ -376,22 +378,27 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__contacts">
-            <a class="footer__logo logo" href="#">
+            <a class="footer__logo logo" href="#home">
               <img
-                class="logo__img" src="images/icons/logo.svg" alt="Logotype"/>
+                class="logo__img"
+                src="images/icons/logo.svg"
+                alt="Logotype"
+              />
             </a>
 
             <p class="footer__text">
-              <span>LaslesVPN</span> is a private virtual network that has unique features and has high security.
+              <span>LaslesVPN</span> is a private virtual network that has
+              unique features and has high security.
             </p>
 
             <ul class="footer__socials-list">
               <li class="footer__socials-item">
                 <a class="footer__social-link" href="#">
+                  <span class="sr-only">Facebook icon</span>
                   <svg>
                     <use xlink:href="images/sprite.svg#ic-facebook"></use>
                   </svg>
@@ -399,6 +406,7 @@
               </li>
               <li class="footer__socials-item">
                 <a class="footer__social-link" href="#">
+                  <span class="sr-only">Twitter icon</span>
                   <svg>
                     <use xlink:href="images/sprite.svg#ic-twitter"></use>
                   </svg>
@@ -406,6 +414,7 @@
               </li>
               <li class="footer__socials-item">
                 <a class="footer__social-link" href="#">
+                  <span class="sr-only">Instagram icon</span>
                   <svg>
                     <use xlink:href="images/sprite.svg#ic-instagram"></use>
                   </svg>
@@ -415,63 +424,65 @@
             <p class="footer__copyright">©2020LaslesVPN</p>
           </div>
 
-        <div class="footer__nav">
-         
-          <ul class="footer__nav-list"> 
-            <li class="footer__nav-title"><h3>Product</h3></li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Download </a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Pricing</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Locations</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Server</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Countries</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Blog</a>
-            </li>                
-          </ul>
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-title"><h3>Product</h3></li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Download </a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Pricing</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Locations</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Server</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Countries</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Blog</a>
+              </li>
+            </ul>
 
-          <ul class="footer__nav-list">
-            <li class="footer__nav-title"><h3>Engage</h3></li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">LaslesVPN ? </a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">FAQ</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Tutorials</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">About Us</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Privacy Policy</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Terms of Service</a>
-            </li>          
-          </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-title"><h3>Engage</h3></li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">LaslesVPN ? </a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">FAQ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Tutorials</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About Us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Terms of Service</a>
+              </li>
+            </ul>
 
-          <ul class="footer__nav-list">
-            <li class="footer__nav-title"><h3>Earn Money</h3></li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Affiliate</a>
-            </li>          
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Become Partner</a>
-            </li>          
-          </ul>
-        </div>
-
+            <ul class="footer__nav-list">
+              <li class="footer__nav-title"><h3>Earn Money</h3></li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" target="_blank" href="#"
+                  >Affiliate</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" target="_blank" href="#"
+                  >Become Partner</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
